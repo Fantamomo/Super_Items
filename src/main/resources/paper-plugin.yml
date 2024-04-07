@@ -3,3 +3,17 @@ version: '${project.version}'
 main: at.leisner.super_items.Super_Items
 api-version: '1.20'
 load: STARTUP
+website: minecraft.leisner.at
+authors:
+  - Moritz Leisner
+dependencies:
+  bootstrap:
+    api:
+      load: BEFORE
+      join-classpath: true
+      required: true
+  server:
+    api:
+      load: BEFORE
+      join-classpath: true
+      required: true
